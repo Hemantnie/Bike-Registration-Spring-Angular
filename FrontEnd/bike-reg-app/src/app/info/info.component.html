@@ -1,0 +1,27 @@
+<!-- <ul *ngFor="let user of users; let i=index;">
+  <li>ID:{{user.id}}</li>
+  <li>Name:{{user?.name}}</li>
+  <li>Email:{{user?.email}}</li>
+  <li>Phone:{{user?.phone}}</li>
+  <li>Model:{{user?.model}}</li>
+  <li>SerialNumber:{{user?.serialNumber}}</li>
+  <li>PurchasePrice:{{user?.purchasePrice}}</li>
+  <li>Contact:{{user?.contact}}</li>
+</ul> -->
+
+
+<div class="card" style="width: 18rem;" *ngFor="let user of users; let i=index;">
+  <div class="card-body">
+    <h5 class="card-title">ID:{{user.id}}</h5>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ID:{{user.id}}</li>
+      <li class="list-group-item">Name:{{user?.name}}</li>
+      <li class="list-group-item">Email:{{user?.email}}</li>
+      <li class="list-group-item">Phone:{{user?.phone}}</li>
+      <li class="list-group-item">Model:{{user?.model}}</li>
+      <li class="list-group-item">SerialNumber:{{user?.serialNumber}}</li>
+      <li class="list-group-item">PurchasePrice:{{user?.purchasePrice}}</li>
+      <li class="list-group-item">Contact:{{user?.contact}}</li>
+    </ul>
+  </div>
+</div>
